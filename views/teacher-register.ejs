@@ -1,0 +1,81 @@
+<%- include('../views/layouts/header') %>
+
+<nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/teacher/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Register</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<main class="my-form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Register</div>
+                    <div class="card-body">
+                        <form name="my-form" id="form" action="/teacher/signup" method="post">
+
+                            <div class="form-group input-control row">
+                                <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail
+                                    Address</label>
+                                <div class="col-md-6">
+                                    <input type="email" id="email" class="form-control" name="email" required>
+                                </div>
+                                <div class="error"></div>
+                            </div>
+                            <br>
+                            <div class="form-group input-control row">
+                                <label for="user_name" class="col-md-4 col-form-label text-md-right">Name</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="name" class="form-control" name="name" required>
+                                </div>
+                                <div class="error"></div>
+                            </div>
+                            <br>
+                            <div class="form-group input-control row">
+                                <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                <div class="col-md-6">
+                                    <input type="password" id="password" class="form-control" name="password" required>
+                                </div>
+                                <div class="error"></div>
+                            </div>
+                            <br>
+                            <div class="form-group input-control row">
+                                <label for="password" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
+                                <div class="col-md-6">
+                                    <input type="password" id="password2" class="form-control" name="password2" required>
+                                </div>
+                                <div class="error"></div>
+                            </div>
+                            <br>
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-class btn-primary">
+                                    Register
+                                </button>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</main>
+
+<%- include('../views/layouts/footer') %>

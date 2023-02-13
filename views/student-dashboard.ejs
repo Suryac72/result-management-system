@@ -1,0 +1,41 @@
+<%- include('../views/layouts/logout-header'); %>
+<div>
+    
+</div>
+<div class="mycontainer my container-fluid">
+    <h3>Find your Result</h3>  
+    <form name="my-form" action="/student/dashboard" method="post">
+        <div class="form-group row">
+            <label for="email_address" class="col-md-4 col-form-label text-md-right">
+                Roll No</label>
+            <div class="col-md-6">
+                <input type="text" id="rollno" class="form-control" name="rollno" required>
+            </div>
+        </div>
+        <br>
+        <div class="form-group row">
+            <label for="dob" class=" control-label col-md-4 col-form-label text-md-right">Date or Birth</label>
+            <div class="col-md-6">
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="date" class="form-control" name="dob" id="dob">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="col-md-6 offset-md-4">
+            <button type="submit" class=" btn-class btn btn-primary">
+                Submit
+            </button>
+            <button type="submit" class=" btn-class btn btn-outline-primary">
+                Clear
+            </button>
+        </div>
+</div>
+</form>                       
+</div>
+  
+
+<%- include('../views/layouts/footer'); %>

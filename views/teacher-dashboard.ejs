@@ -1,0 +1,44 @@
+<%- include('../views/layouts/logout-header') %>
+<form class="container contain" action="/result/add">
+  <button type="submit" style="border-radius: 10px" class="record btn btn-primary">
+    Add Record
+  </button>
+</form>
+<div class="my-cont container">
+  <h4>Total Students</h4>
+  <br />
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Roll No.</th>
+        <th scope="col">Name</th>
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Score</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% if (results.length!=0) { %>
+          <% for(var i=0; i < results.length;
+          i++) { %>
+          <tr>
+            <th scope="row"><%=i + 1%></th>
+            <td id="rollno"><%= results[i].studentRollNo%></td>
+            <td id="name"><%= results[i].studentName %></td>
+            <td id="dob"><%= results[i].dateOfBirth%></td>
+            <td id="score"><%= results[i].score%></td>
+            <td class="td">
+              <a style="margin-right:5px;" href="result/update/<%=results[i].studentRollNo%>"
+                ><i class="fa-solid fa-pen-to-square"></i
+              ></a>
+              <a href="result/delete/<%=results[i].studentRollNo%>"
+                ><i class="fa-solid fa-trash-can"></i
+              ></a>
+            </td>
+          </tr>
+          <% } %>
+        <% } %>
+    </tbody>
+  </table>
+  <%- include('../views/layouts/footer') %> 

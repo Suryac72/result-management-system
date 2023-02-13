@@ -1,0 +1,28 @@
+<%- include('../views/layouts/logout-header') %> 
+<div class="result-container">
+    <h4 class="result-flex">Result</h4><br>
+    <% function convert(str) { var date = new Date(str); mnth = ("0" +
+      (date.getMonth() + 1)).slice(-2); day = ("0" +
+      date.getDate()).slice(-2); str = [date.getFullYear(), mnth,
+      day].join("-"); return str; } %>
+      <div class="result-flex">
+        <p><b>Name : </b></p>
+        <p><%=result.studentName%></p>
+      </div>
+     <div class="result-flex">
+        <p><b>Roll No : </b></p>
+        <p><%=result.studentRollNo%></p>
+     </div>
+    <div class="result-flex">
+        <p><b>DOB :</b></p>
+        <p><%=convert(result.dateOfBirth)%></p>
+    </div>
+
+    <div class="result-flex">
+        
+     <p><b>Score:</b></p>
+     <p><%=result.score%></p>
+    </div>
+    
+</div>
+<%- include('../views/layouts/footer') %> 

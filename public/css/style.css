@@ -1,0 +1,150 @@
+.header {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #4E9F3D;
+    border-bottom: 1px solid #4E9F3D;
+    background-color: #CDF3A2;
+}
+
+.header h3 {
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 4rem;
+    justify-content: space-between 2rem;
+}
+
+.button-container button {
+    border-radius: 10px;
+    margin: 1rem;
+    width: 8rem;
+}
+
+.main-body h4 {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.my-for {
+    margin-top: 4rem;
+}
+
+.my-for button {
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    width: 8rem;
+}
+
+.my-for h3 {
+    margin-right: 20rem;
+    text-align: center;
+}
+
+.link {
+  padding-top: 2rem;
+  margin-left: 7rem;
+}
+
+.mycontainer {
+  margin: auto;
+  width: 57%;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 900px) {
+  .my label {
+      padding-left: 9.5rem;
+  }
+}
+.mycontainer h3{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.my-cont {
+    width: 70%;
+    margin-top: 5rem;
+}
+
+.record {
+    margin-top: 3rem;
+    position: absolute;
+    right: 0;
+    margin-right: 10rem;
+
+}
+
+.but button {
+    margin-top: 0.9rem;
+    position: absolute;
+    right: 0;
+    margin-right: 4rem;
+
+
+}
+
+div.messages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul.messages {
+    list-style: none;
+    min-width: 600px;
+    max-width: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px;
+  }
+  
+  ul.messages * {
+    padding: 8px 12px;
+  }
+  
+  .messages .error {
+    background-color: #f87171;
+  }
+  .messages .success {
+    background-color: #6ee7b7;
+  }
+  .messages .warning {
+    background-color: #fcd34d;
+  }
+  .messages .info {
+    background-color: #93c5fd;
+  }
+  
+.update {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.result-container{
+  margin-top: 100px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.result-flex{
+  display:flex;
+  flex-direction:row;
+  column-gap: 1.4rem;
+  margin-left: 28rem;
+}
+
+@media screen and (min-width: 800px) {
+    .btn-class {
+        margin-left: 0.5rem;
+    }
+}

@@ -1,0 +1,16 @@
+
+<% if (locals.messages) { %>
+  <div class="messages">
+    <ul class="messages" id="flash-messages">
+      <% Object.keys(messages).forEach((key)=> { %>
+        <% console.log(messages) %>
+          <% messages[key].forEach((message)=> { %>
+            <li class="<%= key %>">
+              <%= message %>
+            </li>
+            <% }) %>
+              <% })%>
+    </ul>
+  </div>
+  <% } %>
+  <script type="text/javascript">window.setTimeout("document.getElementById('flash-messages').style.display='none';", 2000); </script>

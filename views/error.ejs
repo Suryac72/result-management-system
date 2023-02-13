@@ -1,0 +1,18 @@
+<%- include('./layouts/header') %>
+    <div class="error container">
+        <h1>We're lost in space</h1>
+        <br />
+        <h3>
+            <%= error.status %> | <%= error.message %>
+        </h3>
+        <br />
+        <a href="/">← Back to home</a>
+    </div>
+    <style>
+        .error{
+           display: flex;flex-direction: column;
+           text-align: center;  
+           margin-top: 5rem;
+        }
+    </style>
+    <%- include ('layouts/footer') %>
